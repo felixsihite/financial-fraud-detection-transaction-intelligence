@@ -147,6 +147,8 @@ financial_fraud_detection_&_transaction_intelligence/
 
 ## Dashboard
 
+Live dashboard: [financial-fraud-detection-transaction-intelligence-b2x9b7uxjgl.streamlit.app](https://financial-fraud-detection-transaction-intelligence-b2x9b7uxjgl.streamlit.app/)
+
 The Streamlit dashboard includes:
 
 - Executive Fraud Overview
