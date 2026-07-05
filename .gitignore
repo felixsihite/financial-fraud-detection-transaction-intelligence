@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Raw and large generated artifacts
+data/raw/*.csv
+data/processed/*.csv
+!data/processed/validation_scored_sample.csv
+models/*.joblib
+outputs/predictions/*.csv
+outputs/risk_scores/*.csv
+!outputs/risk_scores/investigation_priority_top_1000.csv
+
+# Local app/system files
+.DS_Store
+Thumbs.db

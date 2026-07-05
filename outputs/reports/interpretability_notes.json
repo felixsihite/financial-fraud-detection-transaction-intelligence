@@ -1,0 +1,5 @@
+{
+  "method": "Permutation importance using average precision on validation data",
+  "shap_status": "Optional. Install shap and rerun the notebook/script to add SHAP plots.",
+  "reason": "SHAP is not required for the reproducible baseline environment; permutation importance is used as an equivalent model explanation fallback."
+}

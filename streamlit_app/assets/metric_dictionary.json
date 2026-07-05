@@ -1,0 +1,27 @@
+{
+  "total_transactions": {
+    "label": "Total Transactions",
+    "definition": "Number of rows in the raw simulated transaction dataset.",
+    "source": "outputs/reports/data_quality_summary.json"
+  },
+  "fraud_rate": {
+    "label": "Fraud Rate",
+    "definition": "Confirmed fraud transactions divided by all transactions.",
+    "source": "isFraud target distribution"
+  },
+  "pr_auc": {
+    "label": "PR-AUC",
+    "definition": "Average precision score; primary metric for extreme class imbalance.",
+    "source": "outputs/reports/model_performance_summary.json"
+  },
+  "top_k_capture": {
+    "label": "Top-K Fraud Capture",
+    "definition": "Fraud cases captured when reviewing the highest-risk ranked transactions.",
+    "source": "outputs/reports/top_k_fraud_capture.csv"
+  },
+  "risk_score": {
+    "label": "Fraud Risk Score",
+    "definition": "Predicted fraud probability scaled from 0 to 1000 for investigation queue readability.",
+    "source": "outputs/risk_scores/investigation_priority_top_1000.csv"
+  }
+}

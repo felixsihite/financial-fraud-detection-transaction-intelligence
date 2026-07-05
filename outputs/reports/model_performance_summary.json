@@ -1,0 +1,89 @@
+{
+  "best_model": "Random Forest",
+  "best_model_metrics": {
+    "threshold": 0.75,
+    "pr_auc": 0.9997917196604756,
+    "roc_auc": 0.9999921142999258,
+    "precision": 1.0,
+    "recall": 0.9993279569892473,
+    "f1": 0.9996638655462184,
+    "f2": 0.9994622933189945,
+    "true_negatives": 1576313,
+    "false_positives": 0,
+    "false_negatives": 3,
+    "true_positives": 4461,
+    "false_positive_rate": 0.0
+  },
+  "split_metadata": {
+    "split_strategy": "time-aware validation using step",
+    "step_cutoff": 335,
+    "train_rows": 123749,
+    "validation_rows": 1580777,
+    "train_fraud_rows": 3749,
+    "validation_fraud_rows": 4464,
+    "max_train_nonfraud": 120000
+  },
+  "feature_columns": [
+    "step",
+    "amount",
+    "transaction_type_encoded",
+    "amount_log",
+    "amount_percentile",
+    "origin_balance_delta",
+    "destination_balance_delta",
+    "origin_balance_error",
+    "destination_balance_error",
+    "is_origin_account_drained",
+    "is_destination_zero_before",
+    "is_destination_zero_after",
+    "amount_equals_old_origin_balance",
+    "origin_balance_ratio",
+    "destination_balance_ratio",
+    "high_amount_flag",
+    "transfer_or_cashout_flag",
+    "customer_to_customer_flag",
+    "customer_to_merchant_flag",
+    "step_hour_bucket",
+    "step_day_simulation",
+    "type_CASH_IN",
+    "type_CASH_OUT",
+    "type_DEBIT",
+    "type_PAYMENT",
+    "type_TRANSFER"
+  ],
+  "top_k_capture": [
+    {
+      "review_rate": 0.001,
+      "reviewed_transactions": 1581,
+      "fraud_captured": 1581,
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.3541666666666667,
+      "lift_vs_random": 354.11671146953404
+    },
+    {
+      "review_rate": 0.005,
+      "reviewed_transactions": 7904,
+      "fraud_captured": 4463,
+      "precision_at_k": 0.5646508097165992,
+      "recall_at_k": 0.9997759856630825,
+      "lift_vs_random": 199.95228786545172
+    },
+    {
+      "review_rate": 0.01,
+      "reviewed_transactions": 15808,
+      "fraud_captured": 4463,
+      "precision_at_k": 0.2823254048582996,
+      "recall_at_k": 0.9997759856630825,
+      "lift_vs_random": 99.97614393272586
+    },
+    {
+      "review_rate": 0.05,
+      "reviewed_transactions": 79039,
+      "fraud_captured": 4464,
+      "precision_at_k": 0.05647844734877719,
+      "recall_at_k": 1.0,
+      "lift_vs_random": 19.999962044054204
+    }
+  ],
+  "benchmark_note": "Final model excludes isFlaggedFraud; benchmark with legacy flag is reported separately."
+}

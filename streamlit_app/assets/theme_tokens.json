@@ -1,0 +1,14 @@
+{
+  "light_background": "#D6E4F0",
+  "card_background": "#F7FAFC",
+  "secondary_surface": "#E2E2E2",
+  "primary_text": "#172033",
+  "secondary_text": "#52616B",
+  "primary_navy": "#0B1F33",
+  "accent_blue": "#2563EB",
+  "accent_teal": "#1F7A8C",
+  "positive_green": "#2E7D32",
+  "warning_amber": "#B7791F",
+  "fraud_risk_red": "#C62828",
+  "critical_risk_red": "#8B1E1E"
+}

@@ -1,0 +1,36 @@
+{
+  "routing_mode": "single_app_internal_navigation",
+  "reason": "Native Streamlit multipage files are intentionally avoided so the portfolio has one controlled sidebar and no duplicate navigation.",
+  "pages": [
+    {
+      "slug": "executive-fraud-overview",
+      "label": "Executive Fraud Overview",
+      "purpose": "Portfolio-level business and model summary."
+    },
+    {
+      "slug": "transaction-intelligence",
+      "label": "Transaction Intelligence",
+      "purpose": "Transaction volume, fraud concentration, and amount behavior."
+    },
+    {
+      "slug": "fraud-pattern-analysis",
+      "label": "Fraud Pattern Analysis",
+      "purpose": "Behavioral fraud signatures and legacy-rule audit."
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance",
+      "purpose": "Rare-event evaluation, threshold tuning, and top-K capture."
+    },
+    {
+      "slug": "fraud-risk-scoring",
+      "label": "Fraud Risk Scoring",
+      "purpose": "Investigation queue and scored transaction export."
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI",
+      "purpose": "Feature drivers and model trust narrative."
+    }
+  ]
+}

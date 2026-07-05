@@ -1,0 +1,8 @@
+# Optional advanced modeling and interpretability packages.
+# The project runs without these; install them to extend the notebooks.
+shap>=0.45
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2
+imbalanced-learn>=0.12
+

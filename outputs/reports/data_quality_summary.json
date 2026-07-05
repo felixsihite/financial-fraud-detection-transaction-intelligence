@@ -1,0 +1,127 @@
+{
+  "source_file": "D:\\Project\\Data Science\\financial_fraud_detection_&_transaction_intelligence\\data\\raw\\AIML Dataset.csv",
+  "dataset_source": "https://www.kaggle.com/datasets/amanalisiddiqui/fraud-detection-dataset",
+  "row_count": 6362620,
+  "column_count": 11,
+  "columns": [
+    "step",
+    "type",
+    "amount",
+    "nameOrig",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "nameDest",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "isFraud",
+    "isFlaggedFraud"
+  ],
+  "expected_columns_match": true,
+  "dtypes": {
+    "step": "int64",
+    "type": "object",
+    "amount": "float64",
+    "nameOrig": "object",
+    "oldbalanceOrg": "float64",
+    "newbalanceOrig": "float64",
+    "nameDest": "object",
+    "oldbalanceDest": "float64",
+    "newbalanceDest": "float64",
+    "isFraud": "int64",
+    "isFlaggedFraud": "int64"
+  },
+  "missing_values": {
+    "step": 0,
+    "type": 0,
+    "amount": 0,
+    "nameOrig": 0,
+    "oldbalanceOrg": 0,
+    "newbalanceOrig": 0,
+    "nameDest": 0,
+    "oldbalanceDest": 0,
+    "newbalanceDest": 0,
+    "isFraud": 0,
+    "isFlaggedFraud": 0
+  },
+  "total_missing_values": 0,
+  "duplicate_rows_hash_check": 0,
+  "target_distribution": {
+    "non_fraud": 6354407,
+    "fraud": 8213
+  },
+  "fraud_rate": 0.001290820448180152,
+  "flagged_distribution": {
+    "0": 6362604,
+    "1": 16
+  },
+  "flagged_vs_fraud": {
+    "fraud_0__flag_0": 6354407,
+    "fraud_1__flag_0": 8197,
+    "fraud_1__flag_1": 16
+  },
+  "flagged_fraud_capture_rate": 0.0019481310118105442,
+  "flagged_precision": 1.0,
+  "transaction_type_summary": [
+    {
+      "type": "CASH_IN",
+      "transactions": 1399284,
+      "fraud_transactions": 0,
+      "fraud_rate": 0.0
+    },
+    {
+      "type": "CASH_OUT",
+      "transactions": 2237500,
+      "fraud_transactions": 4116,
+      "fraud_rate": 0.0018395530726256983
+    },
+    {
+      "type": "DEBIT",
+      "transactions": 41432,
+      "fraud_transactions": 0,
+      "fraud_rate": 0.0
+    },
+    {
+      "type": "PAYMENT",
+      "transactions": 2151495,
+      "fraud_transactions": 0,
+      "fraud_rate": 0.0
+    },
+    {
+      "type": "TRANSFER",
+      "transactions": 532909,
+      "fraud_transactions": 4097,
+      "fraud_rate": 0.007687991758442811
+    }
+  ],
+  "step_min": 1,
+  "step_max": 743,
+  "amount_summary": {
+    "min": 0.0,
+    "max": 92445516.64,
+    "mean": 179861.90354913071,
+    "std": 603858.1840093508,
+    "fraud_sum": 12056415427.84,
+    "fraud_min": 0.0,
+    "fraud_max": 10000000.0
+  },
+  "balance_consistency": {
+    "origin_balance_error_gt_001": 5077691,
+    "destination_balance_error_gt_001": 4188647
+  },
+  "behavioral_patterns": {
+    "origin_account_drained": 1520582,
+    "fraud_origin_account_drained": 8012,
+    "amount_equals_old_origin_balance": 8036,
+    "fraud_amount_equals_old_origin_balance": 8034
+  },
+  "account_cardinality_hash_based": {
+    "nameOrig_unique": 6353307,
+    "nameDest_unique": 2722362
+  },
+  "leakage_audit": {
+    "target_column_excluded_from_features": true,
+    "isFlaggedFraud_treated_as_legacy_rule": true,
+    "identifier_columns_used_only_for_behavioral_flags": true,
+    "validation_strategy": "step-aware split in the modeling pipeline"
+  }
+}
